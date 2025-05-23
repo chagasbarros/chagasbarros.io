@@ -1,63 +1,93 @@
-function Footer() {
+import React from "react";
+import logoDripPB from "../assets/logo/DigitallFooter.svg";
+import twiter from "../assets/logo/twiter.svg"
+import insta from "../assets/logo/insta.svg"
+import face from "../assets/logo/face.svg"
+const footer = () => {
     return (
-      <footer className="bg-dark text-white w-100" style={{ paddingTop: '2rem' }}>
-        <div className="container-global d-flex flex-wrap justify-content-between">
+      <footer className="bg-dark text-light pt-5 mt-2">
+        <div className="container">
+          <div className="row">
+            
+            <div className="col-md-3 mb-4">
+              
+                <img
+                              src={logoDripPB}
+                              alt="LogoPB"
+                              className="me-2"
+                              style={{ width: "150px"}}
+                            />
+              
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <div>
+                <a href="#" className="text-light me-3">
+                <img
+                                src={face}
+                                alt="facebook"
+                                className=""
+                                style={{ width: "25px", height: "25px"}}
+                              />
+                </a>
+                <a href="#" className="text-light me-3">
+                <img
+                                src={insta}
+                                alt="instagram"
+                                className=""
+                                style={{ width: "25px"}}
+                              />
+                </a>
+                <a href="#" className="text-light">
+                  <img
+                                src={twiter}
+                                alt="twiter"
+                                style={{ width: "25px"}}
+                              />
+                </a>
+              </div>
+            </div>
   
-          <div className="logo-footer d-flex flex-column mb-4">
-            <img src="/logo-footer.svg" alt="logo em preto e branco" className="mb-3" />
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase fw-bold mb-3">Informação</h6>
+              <ul className="list-unstyled">
+                {['Sobre Drip Store', 'Segurança', 'Wishlist', 'Blog', 'Trabalhe conosco', 'Meus Pedidos'].map((item, index) => (
+                  <li key={index}>
+                    <a href="#" className="text-light text-decoration-none">{item}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
   
-            <p className="paragrafo-footer">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Nobis incidunt consequatur in excepturi?
-            </p>
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase fw-bold mb-3">Categorias</h6>
+              <ul className="list-unstyled">
+                {['Camisetas', 'Calças', 'Bonés', 'Headphones', 'Tênis'].map((item, index) => (
+                  <li key={index}>
+                    <a href="#" className="text-light text-decoration-none">{item}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
   
-            <div className="redes-footer mt-3">
-              <a href="https://www.facebook.com/?locale=pt_BR"><i className="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/"><i className="bi bi-instagram"></i></a>
-              <a href="https://x.com/?lang=pt"><i className="bi bi-twitter-x"></i></a>
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase fw-bold mb-3">Contato</h6>
+              <address className="text-light">
+                Av. Santos Dumont, 1510 – 1 andar <br />
+                Aldeota, Fortaleza – CE, 60150-161 <br />
+                (85) 3051-3411
+              </address>
             </div>
           </div>
   
-          <div className="coluna-footer coluna-informacao mb-4">
-            <h3>Informação</h3>
-            <ul>
-              <li>Sobre Drip Store</li>
-              <li>Segurança</li>
-              <li>Wishilist</li>
-              <li>Blog</li>
-              <li>Trabalhe Conosco</li>
-              <li>Meus Pedidos</li>
-            </ul>
+          <hr className="border-secondary" />
+  
+          <div className="text-center pb-3">
+            © 2025 Digital College
           </div>
-  
-          <div className="coluna-footer mb-4">
-            <h3>Categorias</h3>
-            <ul>
-              <li>Camisetas</li>
-              <li>Calças</li>
-              <li>Bonés</li>
-              <li>Headphones</li>
-              <li>Tênis</li>
-            </ul>
-          </div>
-  
-          <div className="contato-footer coluna-footer mb-4">
-            <h3>Contato</h3>
-            <p>
-              Av. Santos Dumont, 1510 - 1º andar - Aldeota, Fortaleza - CE, 60150-161
-            </p>
-            <p>(85) 3051-3411</p>
-          </div>
-        </div>
-  
-        <div className="linha-footer mx-auto my-3"></div>
-  
-        <div className="text-center pb-3" style={{ fontSize: '0.9rem', color: '#aaa' }}>
-          © 2022 Digital College
         </div>
       </footer>
     );
-  }
+  };
   
-  export default Footer;
-  
+  export default footer;
