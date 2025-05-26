@@ -41,7 +41,7 @@ const FormCadastro = () => {
                             <div>
                               <p className="m-0 text-end text-danger ">R$: 219,00</p>
                               <small className="opacity-50">
-                                ou 10x de R$: 21,00 sem juros
+                                ou 10x de R$: 21,90 sem juros
                               </small>
                             </div>
                           </div>
