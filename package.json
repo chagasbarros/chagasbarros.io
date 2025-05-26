@@ -1,8 +1,9 @@
 {
-  "name": "projeto-final",
+  "name": "digitalstore",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://TechOtavio.github.io/DripStore",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,13 +14,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
-    "bootstrap-icons": "^1.11.3",
+    "bootstrap-icons": "^1.12.1",
     "react": "^19.0.0",
-    "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0"
   },
-  "homepage": "https://chagasbarros.github.io/chagasbarros.io",
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@types/react": "^19.0.10",
